@@ -1,3 +1,5 @@
+import numpy as np
+
 class Distance:
     #TODO normalize numerical columns
     def normalize(X):
