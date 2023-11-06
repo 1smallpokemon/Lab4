@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from pandas.api.types import is_any_real_numeric_dtype
 
 def load_data(file_path):
     """Loads data from a CSV file, excluding columns marked with 0 in the first row."""
