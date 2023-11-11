@@ -15,45 +15,57 @@ def main():
         uncleaned_data =  load_data(sys.argv[1])
         data =  preprocess_data(uncleaned_data)
         
-        k = sys.argv[2]
+        k = int(sys.argv[2])
     except:
         print("Couldn't parse command line")
         
+    kmeans(data, k)
     
     pass
 
 
 def initial_centroids(data , k):
-    return data.random_sample(n=k)
+    return [data.sample(n=1, axis = 0).T for i in range(k)]
     ## TODO Implement KMeans++ after :D
     
 def kmeans(data, k):
-    centriods = initial_centroids(data, k)
+    centroids = initial_centroids(data, k)
     
-    while stopping_condition(data, k):
+    old_centroids = []
+    for i in range(k):
+        old_centroids.append(np.zeros(len(data.columns)))
+    
+    while stopping_condition(old_centroids, centroids):
         # No clue why its called s
         s = []
         
         # Assigns all points to no cluster, resets s to 0's
         for i in range(k):
-            s.append(np.zeros(len(data[:1])).tolist())
+            s.append(np.zeros(len(data.columns)))
             clusters = [set() for _ in range(k)]
         
+        # Calculate distances to centroids and assign
         for _,row in data.iterrows():
-            distances = np.zeros(k).tolist
+            distances = np.zeros(k).tolist()
             for i in range(k):
-                distances[i] = DistanceCalculator.euclidian_distance(row, centriods[k])
+                distances[i] = DistanceCalculator.euclidian_distance(row, centroids[i])
             
             cluster = np.array(distances).argmin()
-            
-            clusters[cluster] | row
-            
-            s[i]
-            
-            
+            clusters[cluster].add(tuple(row.to_list()))
+            s[cluster] += row.to_numpy()
         
-def stopping_condition(data, k):
-    return
+        # Recalculate centroids
+        for i in range(k):
+            old_centroids[i] = centroids[i]
+            centroids[i] = s[i] / float(len(clusters[i]))
+
+        
+            
+
+def stopping_condition(old_centroids, centroids, threshold=0.001):
+    total_movement = sum(DistanceCalculator.euclidian_distance(np.array(oc), np.array(c)) for oc, c in zip(old_centroids, centroids))
+    return total_movement > threshold
+
 
 if __name__ == "__main__":
     main()

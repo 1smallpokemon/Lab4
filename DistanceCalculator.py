@@ -8,16 +8,16 @@ class DistanceCalculator:
     def euclidian_distance(x, y):
         # dist = sqrt(sum((x-y)^2))
         diff = x - y
-        return np.sqrt(np.sum(diff ** 2))
+        return np.sqrt(np.sum(diff ** 2, axis = 0))
     
     def squared_euclidian_distance(x, y):
         # dist = sum((x-y)^2))
         diff = x - y
-        return np.sum(diff ** 2)
+        return np.sum(diff ** 2, axis=0)
     
     def manhattan_distance(x, y):
         diff = x - y
-        return np.sum(abs(diff))
+        return np.sum(abs(diff),axis=0)
     
     def minkowski_distance(x, y, l):
         """
@@ -25,7 +25,7 @@ class DistanceCalculator:
         l = 1 manhattan distance, l = 2 euclidian distance
         """
         diff = x - y
-        return np.power(np.sum((diff ** l)), 1/l)
+        return np.power(np.sum((diff ** l),axis=0), 1/l)
     
     def chebyshev_distance(x, y):
         diff = x - y
