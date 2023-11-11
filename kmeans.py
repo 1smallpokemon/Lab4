@@ -16,12 +16,32 @@ def main():
         data =  preprocess_data(uncleaned_data)
         
         k = int(sys.argv[2])
-    except:
-        print("Couldn't parse command line")
+        if k <= 0 or k > len(data):
+            raise ValueError("Invalid number of clusters")
         
-    kmeans(data, k)
-    
-    pass
+    except Exception as e:
+        print(f"Error: {e}")
+        sys.exit(1)
+        
+    centroids, clusters = kmeans(data, k)
+    print("Centroids:", centroids)
+    print("Clusters:", clusters)
+
+def inital_centroids_kmeans_pp(data, k):
+    # 1 Compute the overall centroid of the dataset
+    overall_centroid = data.mean()
+
+    # First centroid is farthest from the overall centroid
+    distances = data.apply(lambda x: np.linalg.norm(x - overall_centroid), axis=1)
+    centroids = [data.iloc[np.argmax(distances)].to_frame().T]
+
+    # Select remaining centroids
+    for _ in range(1, k):
+        distances = data.apply(lambda x: min([np.linalg.norm(x - c) for c in centroids]), axis=1)
+        next_centroid = data.iloc[np.argmax(distances)].to_frame().T
+        centroids.append(next_centroid)
+
+    return pd.concat(centroids, ignore_index=True)
 
 
 def initial_centroids(data , k):
