@@ -11,7 +11,7 @@ def main():
     best_threshold = None
 
     # Starting parameters for tuning
-    k_values = range(2, 5)  # Example range for k
+    k_values = range(2, 10)  # Example range for k
     threshold_values = [0.001]
     while threshold_values[-1] < 100 / 2:
         threshold_values.append(threshold_values[-1] * 2)
