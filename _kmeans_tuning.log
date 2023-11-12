@@ -1,0 +1,41 @@
+2023-11-11 21:55:34,763 INFO Evaluating k-means with k: 2
+2023-11-11 21:55:34,854 INFO SSE for k=2: 4.105568738136402
+2023-11-11 21:55:34,854 INFO Evaluating k-means with k: 3
+2023-11-11 21:55:34,983 INFO SSE for k=3: 1.161949527601237
+2023-11-11 21:55:34,983 INFO Evaluating k-means with k: 4
+2023-11-11 21:55:35,161 INFO SSE for k=4: 0.743077244323683
+2023-11-11 21:55:35,161 INFO Evaluating k-means with k: 4 and threshold: 0.001
+2023-11-11 21:55:35,352 INFO SSE for threshold=0.001: 0.743077244323683
+2023-11-11 21:55:35,352 INFO Evaluating k-means with k: 4 and threshold: 0.002
+2023-11-11 21:55:35,554 INFO SSE for threshold=0.002: 0.743077244323683
+2023-11-11 21:55:35,554 INFO Evaluating k-means with k: 4 and threshold: 0.004
+2023-11-11 21:55:35,732 INFO SSE for threshold=0.004: 0.743077244323683
+2023-11-11 21:55:35,732 INFO Evaluating k-means with k: 4 and threshold: 0.008
+2023-11-11 21:55:35,944 INFO SSE for threshold=0.008: 0.743077244323683
+2023-11-11 21:55:35,944 INFO Evaluating k-means with k: 4 and threshold: 0.016
+2023-11-11 21:55:36,128 INFO SSE for threshold=0.016: 0.743077244323683
+2023-11-11 21:55:36,128 INFO Evaluating k-means with k: 4 and threshold: 0.032
+2023-11-11 21:55:36,305 INFO SSE for threshold=0.032: 0.743077244323683
+2023-11-11 21:55:36,305 INFO Evaluating k-means with k: 4 and threshold: 0.064
+2023-11-11 21:55:36,477 INFO SSE for threshold=0.064: 0.743077244323683
+2023-11-11 21:55:36,477 INFO Evaluating k-means with k: 4 and threshold: 0.128
+2023-11-11 21:55:36,622 INFO SSE for threshold=0.128: 0.743077244323683
+2023-11-11 21:55:36,622 INFO Evaluating k-means with k: 4 and threshold: 0.256
+2023-11-11 21:55:36,762 INFO SSE for threshold=0.256: 0.743077244323683
+2023-11-11 21:55:36,762 INFO Evaluating k-means with k: 4 and threshold: 0.512
+2023-11-11 21:55:36,909 INFO SSE for threshold=0.512: 0.743077244323683
+2023-11-11 21:55:36,909 INFO Evaluating k-means with k: 4 and threshold: 1.024
+2023-11-11 21:55:37,053 INFO SSE for threshold=1.024: 0.743077244323683
+2023-11-11 21:55:37,053 INFO Evaluating k-means with k: 4 and threshold: 2.048
+2023-11-11 21:55:37,203 INFO SSE for threshold=2.048: 0.743077244323683
+2023-11-11 21:55:37,203 INFO Evaluating k-means with k: 4 and threshold: 4.096
+2023-11-11 21:55:37,309 INFO SSE for threshold=4.096: 0.8307141378722576
+2023-11-11 21:55:37,309 INFO Evaluating k-means with k: 4 and threshold: 8.192
+2023-11-11 21:55:37,413 INFO SSE for threshold=8.192: 0.8307141378722576
+2023-11-11 21:55:37,413 INFO Evaluating k-means with k: 4 and threshold: 16.384
+2023-11-11 21:55:37,521 INFO SSE for threshold=16.384: 0.8307141378722576
+2023-11-11 21:55:37,521 INFO Evaluating k-means with k: 4 and threshold: 32.768
+2023-11-11 21:55:37,626 INFO SSE for threshold=32.768: 0.8307141378722576
+2023-11-11 21:55:37,626 INFO Evaluating k-means with k: 4 and threshold: 65.536
+2023-11-11 21:55:37,729 INFO SSE for threshold=65.536: 0.8307141378722576
+2023-11-11 21:55:37,729 INFO Best parameters: k=4, threshold=None with SSE: 0.743077244323683

@@ -48,13 +48,12 @@ def initial_centroids(data , k):
     return [data.sample(n=1, axis = 0).T for i in range(k)]
     ## TODO Implement KMeans++ after :D
 
-def kmeans(data, k):
+def kmeans(data, k, threshold = 0.001):
     centroids = initial_centroids_kmeans_pp(data, k)
     old_centroids = pd.DataFrame(np.zeros_like(centroids.values))
     assignments = np.zeros(data.shape[0])
     old_assignments = np.ones(data.shape[0]) * -1
     max_iterations = 100
-    threshold = 0.001
     old_sse = None
 
     for iteration in range(max_iterations):
@@ -88,24 +87,31 @@ def kmeans(data, k):
         old_assignments = assignments.copy()
         old_sse = sse
     
-    return centroids, assignments        
-def stopping_condition(old_centroids, centroids, old_assignments, assignments, data, threshold=0.001):
-    # Condition 1: Check if there's a minimum change in assignments
-    if np.array_equal(assignments, old_assignments):
-        return True  # Stopping condition met
+    for i in range(k):
+        cluster_points = data[assignments == i]
+        cluster_center = centroids.iloc[i]
+        distances = cluster_points.apply(lambda x: DistanceCalculator.euclidean_distance(x, cluster_center), axis=1)
+        
+        # Calculating statistics for the cluster
+        max_dist = distances.max()
+        min_dist = distances.min()
+        avg_dist = distances.mean()
+        sse = np.sum(distances ** 2)
 
-    # Condition 2: Check if there's a minimum change in centroids
-    centroids_changed = sum(DistanceCalculator.euclidean_distance(np.array(oc), np.array(c)) for oc, c in zip(old_centroids, centroids))
-    if centroids_changed <= threshold:
-        return True  # Stopping condition met
-
-    # Condition 3: Check for insignificant decrease in SSE
-    new_sse = calculate_sse(data, centroids, assignments)
-    old_sse = calculate_sse(data, old_centroids, old_assignments)
-    if abs(old_sse - new_sse) <= threshold:
-        return True  # Stopping condition met
-
-    return False  # Continue the algorithm
+        # Printing cluster information
+        print(f"Cluster {i}:")
+        print(f"Center: {cluster_center.to_list()}")
+        print(f"Max Dist. to Center: {max_dist}")
+        print(f"Min Dist. to Center: {min_dist}")
+        print(f"Avg Dist. to Center: {avg_dist}")
+        print(f"SSE: {sse}")
+        print(f"{len(cluster_points)} Points:")
+        for point in cluster_points.values:
+            print(point)
+            
+        print() 
+    
+    return centroids, assignments
 
 def calculate_sse(data, centroids, assignments):
     sse = 0
