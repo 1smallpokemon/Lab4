@@ -44,40 +44,42 @@ def inital_centroids_kmeans_pp(data, k):
     return pd.concat(centroids, ignore_index=True)
 
 
-def initial_centroids(data , k):
+def inital_centroids(data , k):
     return [data.sample(n=1, axis = 0).T for i in range(k)]
     ## TODO Implement KMeans++ after :D
     
 def kmeans(data, k):
-    centroids = initial_centroids(data, k)
+    centroids = inital_centroids_kmeans_pp(data, k)
     
-    old_centroids = []
-    for i in range(k):
-        old_centroids.append(np.zeros(len(data.columns)))
+    old_centroids = pd.DataFrame(np.zeros_like(centroids.values))
+    max_iterations = 100
+    threshold = 0.001
+     
     
-    while stopping_condition(old_centroids, centroids):
-        # No clue why its called s
-        s = []
-        
-        # Assigns all points to no cluster, resets s to 0's
-        for i in range(k):
-            s.append(np.zeros(len(data.columns)))
-            clusters = [set() for _ in range(k)]
+    for _ in range(max_iterations):
+        # Assigns all points to no cluster
+        clusters = [set() for _ in range(k)]
+        cluster_sums = np.zeros((k, data.shape[1]))
         
         # Calculate distances to centroids and assign
-        for _,row in data.iterrows():
-            distances = np.zeros(k).tolist()
-            for i in range(k):
-                distances[i] = DistanceCalculator.euclidian_distance(row, centroids[i])
-            
-            cluster = np.array(distances).argmin()
-            clusters[cluster].add(tuple(row.to_list()))
-            s[cluster] += row.to_numpy()
+        for _, row in data.iterrows():
+            distances = [DistanceCalculator.euclidean_distance(row, centroids.iloc[i]) for i in range(k)]
+            cluster = np.argmin(distances)
+            clusters[cluster].add(tuple(row))
+            cluster_sums[cluster] += row
         
         # Recalculate centroids
         for i in range(k):
-            old_centroids[i] = centroids[i]
-            centroids[i] = s[i] / float(len(clusters[i]))
+            if len(clusters[i]) > 0:
+                centroids.iloc[i] = cluster_sums[i] / len(clusters[i])
+        
+        # Check stopping condition
+        total_movement = sum(DistanceCalculator.euclidean_distance(old_centroids.iloc[i], centroids.iloc[i]) for i in range(k))
+        if total_movement <= threshold:
+            break
+        old_centroids = centroids.copy()
+    
+    return centroids, clusters
 
         
             
