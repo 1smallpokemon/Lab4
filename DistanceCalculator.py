@@ -5,12 +5,12 @@ class DistanceCalculator:
     """
     x and y are rows of a pandas dataframe, each representing a datapoint
     """
-    def euclidian_distance(x, y):
+    def euclidean_distance(x, y):
         # dist = sqrt(sum((x-y)^2))
         diff = x - y
         return np.sqrt(np.sum(diff ** 2, axis = 0))
     
-    def squared_euclidian_distance(x, y):
+    def squared_euclidean_distance(x, y):
         # dist = sum((x-y)^2))
         diff = x - y
         return np.sum(diff ** 2, axis=0)
