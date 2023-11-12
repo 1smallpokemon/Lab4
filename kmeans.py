@@ -80,7 +80,7 @@ def kmeans(data, k):
 
         # Calculate SSE and check for stopping condition
         sse = calculate_sse(data, centroids, assignments)
-        if old_sse is not None and abs(old_sse - sse) <= threshold:
+        if old_sse != None and abs(old_sse - sse) <= threshold:
             break
 
         # Prepare for next iteration
@@ -111,7 +111,7 @@ def calculate_sse(data, centroids, assignments):
     sse = 0
     for i, centroid in enumerate(centroids):
         cluster_points = data[assignments == i]
-        sse += np.sum((cluster_points - centroid) ** 2)
+        sse += np.sum((cluster_points - centroid) ** 2, axis=0)
     return sse
             
 def stopping_condition(old_centroids, centroids, threshold=0.001):
