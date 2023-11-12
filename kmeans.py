@@ -27,7 +27,7 @@ def main():
     print("Centroids:", centroids)
     print("Clusters:", clusters)
 
-def inital_centroids_kmeans_pp(data, k):
+def initial_centroids_kmeans_pp(data, k):
     # 1 Compute the overall centroid of the dataset
     overall_centroid = data.mean()
 
@@ -44,7 +44,7 @@ def inital_centroids_kmeans_pp(data, k):
     return pd.concat(centroids, ignore_index=True)
 
 
-def inital_centroids(data , k):
+def initial_centroids(data , k):
     return [data.sample(n=1, axis = 0).T for i in range(k)]
     ## TODO Implement KMeans++ after :D
 
