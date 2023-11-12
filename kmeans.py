@@ -47,43 +47,73 @@ def inital_centroids_kmeans_pp(data, k):
 def inital_centroids(data , k):
     return [data.sample(n=1, axis = 0).T for i in range(k)]
     ## TODO Implement KMeans++ after :D
-    
+
 def kmeans(data, k):
-    centroids = inital_centroids_kmeans_pp(data, k)
-    
+    centroids = initial_centroids_kmeans_pp(data, k)
     old_centroids = pd.DataFrame(np.zeros_like(centroids.values))
+    assignments = np.zeros(data.shape[0])
+    old_assignments = np.ones(data.shape[0]) * -1
     max_iterations = 100
     threshold = 0.001
-     
-    
-    for _ in range(max_iterations):
-        # Assigns all points to no cluster
-        clusters = [set() for _ in range(k)]
-        cluster_sums = np.zeros((k, data.shape[1]))
-        
-        # Calculate distances to centroids and assign
-        for _, row in data.iterrows():
-            distances = [DistanceCalculator.euclidean_distance(row, centroids.iloc[i]) for i in range(k)]
-            cluster = np.argmin(distances)
-            clusters[cluster].add(tuple(row))
-            cluster_sums[cluster] += row
-        
-        # Recalculate centroids
-        for i in range(k):
-            if len(clusters[i]) > 0:
-                centroids.iloc[i] = cluster_sums[i] / len(clusters[i])
-        
-        # Check stopping condition
-        total_movement = sum(DistanceCalculator.euclidean_distance(old_centroids.iloc[i], centroids.iloc[i]) for i in range(k))
-        if total_movement <= threshold:
+    old_sse = None
+
+    for iteration in range(max_iterations):
+        # Assignment step
+        for i, row in data.iterrows():
+            distances = [DistanceCalculator.euclidean_distance(row, centroids.iloc[j]) for j in range(k)]
+            assignments[i] = np.argmin(distances)
+
+        # Check for stopping condition based on assignments
+        if np.array_equal(assignments, old_assignments):
             break
+
+        # Update centroids
+        for i in range(k):
+            cluster_points = data[assignments == i]
+            if not cluster_points.empty:
+                centroids.iloc[i] = cluster_points.mean()
+
+        # Check for stopping condition based on centroids
+        centroids_changed = sum(DistanceCalculator.euclidean_distance(old_centroids.iloc[i], centroids.iloc[i]) for i in range(k))
+        if centroids_changed <= threshold:
+            break
+
+        # Calculate SSE and check for stopping condition
+        sse = calculate_sse(data, centroids, assignments)
+        if old_sse is not None and abs(old_sse - sse) <= threshold:
+            break
+
+        # Prepare for next iteration
         old_centroids = centroids.copy()
+        old_assignments = assignments.copy()
+        old_sse = sse
     
-    return centroids, clusters
+    return centroids, assignments        
+def stopping_condition(old_centroids, centroids, old_assignments, assignments, data, threshold=0.001):
+    # Condition 1: Check if there's a minimum change in assignments
+    if np.array_equal(assignments, old_assignments):
+        return True  # Stopping condition met
 
-        
+    # Condition 2: Check if there's a minimum change in centroids
+    centroids_changed = sum(DistanceCalculator.euclidean_distance(np.array(oc), np.array(c)) for oc, c in zip(old_centroids, centroids))
+    if centroids_changed <= threshold:
+        return True  # Stopping condition met
+
+    # Condition 3: Check for insignificant decrease in SSE
+    new_sse = calculate_sse(data, centroids, assignments)
+    old_sse = calculate_sse(data, old_centroids, old_assignments)
+    if abs(old_sse - new_sse) <= threshold:
+        return True  # Stopping condition met
+
+    return False  # Continue the algorithm
+
+def calculate_sse(data, centroids, assignments):
+    sse = 0
+    for i, centroid in enumerate(centroids):
+        cluster_points = data[assignments == i]
+        sse += np.sum((cluster_points - centroid) ** 2)
+    return sse
             
-
 def stopping_condition(old_centroids, centroids, threshold=0.001):
     total_movement = sum(DistanceCalculator.euclidian_distance(np.array(oc), np.array(c)) for oc, c in zip(old_centroids, centroids))
     return total_movement > threshold
