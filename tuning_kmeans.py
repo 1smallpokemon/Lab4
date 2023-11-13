@@ -1,4 +1,5 @@
 import logging
+import os
 import numpy as np
 import sys
 from preprocessing import load_data, preprocess_data
@@ -6,7 +7,7 @@ from kmeans import kmeans, calculate_sse  # Make sure kmeans and calculate_sse a
 
 def main():
     # Placeholder for the best model's metrics
-    best_sse = np.inf
+    best_sse = np.infcli
     best_k = None
     best_threshold = None
 
@@ -22,14 +23,14 @@ def main():
         sys.exit()
 
     filename = sys.argv[1]
-    data = preprocess_data(load_data(filename))
-    logfilename =f"{filename.split('.')[0]}_kmeans_tuning.log"
+    data, labels = preprocess_data(load_data(filename))
+    
+    base_filename = os.path.splitext(os.path.basename(filename))[0]
+    logfilename = f"{base_filename}_kmeans_tuning.log"
 
     # Initialize logging
-    logging.basicConfig(filename=logfilename, 
-                        level=logging.INFO,
-                        format='%(asctime)s %(levelname)s %(message)s')
-
+    logging.basicConfig(filename=logfilename, level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
+    
     # Tuning k first
     for k in k_values:
         logging.info(f"Evaluating k-means with k: {k}")
