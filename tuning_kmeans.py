@@ -21,9 +21,6 @@ def main():
     # Load and preprocess data
     data, class_labels = preprocess_data(load_data(filename))
 
-    # Check if class labels are present
-    is_classification_dataset = class_labels is not None
-
     # Parameter ranges for tuning
     k_values = range(2, 10)
     threshold_values = [0.001 * (2 ** i) for i in range(int(np.log2(0.01/0.001)) + 1)]
@@ -31,7 +28,7 @@ def main():
     best_sse = np.inf
     best_k = None
     best_threshold = None
-    best_purity = 0 if is_classification_dataset else None
+    best_purity = 0
 
     # Tuning k
     for k in k_values:
@@ -39,34 +36,29 @@ def main():
         sse = calculate_sse(data, centroids, assignments)
         logging.info(f"k={k}: SSE={sse}")
         
-        purity = None
-        if is_classification_dataset:
-            purity = calculate_purity(class_labels, assignments)
-            logging.info(f"k={k}: Purity={purity}")
-
-        # Update best parameters based on SSE and purity
-        if sse < best_sse or (purity is not None and purity > best_purity):
-            best_sse = sse
-            best_k = k
-            best_purity = purity
-
-    # Tuning threshold
-    for threshold in threshold_values:
-        centroids, assignments = kmeans(data, best_k, threshold)
-        sse = calculate_sse(data, centroids, assignments)
-        logging.info(f"k={best_k}, threshold={threshold}: SSE={sse}")
-
         if sse < best_sse:
             best_sse = sse
-            best_threshold = threshold
+            best_k = k
 
-    # Output best parameters
-    print(f"Best parameters: k={best_k}, threshold={best_threshold} with SSE: {best_sse}")
-    if is_classification_dataset:
-        print(f"Best purity: {best_purity}")
-    logging.info(f"Best parameters: k={best_k}, threshold={best_threshold} with SSE: {best_sse}")
-    if is_classification_dataset:
-        logging.info(f"Best purity: {best_purity}")
+    # If class labels are available, further tune for purity
+    if class_labels is not None:
+        for k in k_values:
+            _, assignments = kmeans(data, k)
+            purity, _ = calculate_purity(class_labels, assignments)
+            logging.info(f"k={k}: Purity={purity}")
+
+            if purity > best_purity:
+                best_purity = purity
+                best_k = k
+
+    # Output best parameters for SSE
+    print(f"Best SSE parameters: k={best_k} with SSE: {best_sse}")
+    logging.info(f"Best SSE parameters: k={best_k} with SSE: {best_sse}")
+
+    # Output best parameters for purity if applicable
+    if class_labels is not None:
+        print(f"Best Purity parameters: k={best_k} with Purity: {best_purity}")
+        logging.info(f"Best Purity parameters: k={best_k} with Purity: {best_purity}")
 
 if __name__ == "__main__":
     main()

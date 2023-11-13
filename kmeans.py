@@ -134,7 +134,10 @@ def calculate_purity(assignments, class_labels):
         # Subset the class labels of the current cluster
         cluster_labels = class_labels[cluster_indices]
         # Find the class that has the maximum count (plurality class)
-        plurality_class, plurality_count = np.unique(cluster_labels, return_counts=True)[0][np.argmax(np.unique(cluster_labels, return_counts=True)[1])]
+        unique_classes, counts = np.unique(cluster_labels, return_counts=True)
+        max_count_index = np.argmax(counts)
+        plurality_class = unique_classes[max_count_index]
+        plurality_count = counts[max_count_index]
         # Calculate the purity of the cluster
         cluster_purity = plurality_count / len(cluster_labels)
         cluster_purities[cluster] = cluster_purity
@@ -144,7 +147,6 @@ def calculate_purity(assignments, class_labels):
     # Calculate overall purity
     purity = overall_correct / len(class_labels)
     return purity, cluster_purities
-
 if __name__ == "__main__":
     main()
     
