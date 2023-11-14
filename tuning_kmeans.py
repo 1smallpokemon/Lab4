@@ -46,8 +46,8 @@ def main():
             logging.info(f"k={k}: Purity={purity}")
             if purity > best_purity:
                 best_k = k
-                best_sse = sse     
-        elif sse > best_sse:
+                best_purity = purity     
+        elif sse < best_sse:
             best_sse = best_sse
 
 
