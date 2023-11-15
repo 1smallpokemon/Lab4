@@ -45,7 +45,7 @@ def main():
         # Update best parameters based on SSE and, if applicable, purity
         update_params = False
         if is_classification_dataset:
-            purity = calculate_purity(class_labels, assignments)
+            purity, _ = calculate_purity(class_labels, assignments)
             logging.info(f"k={k}: Purity={purity}")
             # Update if purity is better, or if purity is equal and SSE is lower
             if purity > best_purity or (purity == best_purity and sse < best_sse):

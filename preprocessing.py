@@ -22,8 +22,6 @@ def preprocess_data(data):
     data.reset_index(drop=True, inplace=True)
 
     # If class labels exist, add them back as the first column
-    if class_labels is not None:
-        data.insert(0, 'Class Label', class_labels)
 
     # Convert all columns to numeric
     for col in data.columns:
