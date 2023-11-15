@@ -124,7 +124,9 @@ def calculate_sse(data, centroids, assignments):
 def calculate_purity(assignments, class_labels):
     cluster_purities = {}
     overall_correct = 0
-
+    
+    class_labels = class_labels.reset_index(drop = True, inplace=False)
+        
     # Unique clusters
     unique_clusters = np.unique(assignments)
 
