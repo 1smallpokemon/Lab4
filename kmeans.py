@@ -121,11 +121,34 @@ def calculate_sse(data, centroids, assignments):
     return sse
 
             
-def stopping_condition(old_centroids, centroids, threshold=0.001):
-    total_movement = sum(DistanceCalculator.euclidian_distance(np.array(oc), np.array(c)) for oc, c in zip(old_centroids, centroids))
-    return total_movement > threshold
+def calculate_purity(assignments, class_labels):
+    cluster_purities = {}
+    overall_correct = 0
+    
+    class_labels = class_labels.reset_index(drop = True, inplace=False)
+        
+    # Unique clusters
+    unique_clusters = np.unique(assignments)
 
+    for cluster in unique_clusters:
+        # Find the indices of data points in the current cluster
+        cluster_indices = np.where(assignments == cluster)[0]
+        # Subset the class labels of the current cluster
+        cluster_labels = class_labels[cluster_indices]
+        # Find the class that has the maximum count (plurality class)
+        unique_classes, counts = np.unique(cluster_labels, return_counts=True)
+        max_count_index = np.argmax(counts)
+        plurality_class = unique_classes[max_count_index]
+        plurality_count = counts[max_count_index]
+        # Calculate the purity of the cluster
+        cluster_purity = plurality_count / len(cluster_labels)
+        cluster_purities[cluster] = cluster_purity
+        # Count the correct assignments for overall purity
+        overall_correct += plurality_count
 
+    # Calculate overall purity
+    purity = overall_correct / len(class_labels)
+    return purity, cluster_purities
 if __name__ == "__main__":
     main()
     

@@ -1,15 +1,11 @@
 import logging
 import numpy as np
 import sys
+import os
 from preprocessing import load_data, preprocess_data
-from kmeans import kmeans, calculate_sse  # Make sure kmeans and calculate_sse are imported from your kmeans script
+from kmeans import kmeans, calculate_sse, calculate_purity  # Assuming these functions are correctly implemented
 
 def main():
-    # Placeholder for the best model's metrics
-    best_sse = np.inf
-    best_k = None
-    best_threshold = None
-
     # Starting parameters for tuning
     k_values = range(2, 10)  # Example range for k
     threshold_values = [0.001]
@@ -21,40 +17,58 @@ def main():
         print("Usage: python tuningScript.py <Filename>")
         sys.exit()
 
+    # Extract the base filename to name the log file
     filename = sys.argv[1]
-    data = preprocess_data(load_data(filename))
-    logfilename =f"{filename.split('.')[0]}_kmeans_tuning.log"
+    data, class_labels = preprocess_data(load_data(filename))
+    
+    # Check if class labels are present
+    is_classification_dataset = class_labels is not None
+    
+    base_filename = os.path.splitext(os.path.basename(filename))[0]
+    log_filename = f"{base_filename}_kmeans_tuning.log"
 
     # Initialize logging
-    logging.basicConfig(filename=logfilename, 
-                        level=logging.INFO,
-                        format='%(asctime)s %(levelname)s %(message)s')
+    logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
+    
+    # Initialize best parameters
+    best_sse = np.inf
+    best_k = None
+    best_threshold = None
+    best_purity = 0 if is_classification_dataset else None
 
-    # Tuning k first
+    # Tuning k
     for k in k_values:
-        logging.info(f"Evaluating k-means with k: {k}")
         centroids, assignments = kmeans(data, k)
         sse = calculate_sse(data, centroids, assignments)
-        logging.info(f"SSE for k={k}: {sse}")
+        logging.info(f"k={k}: SSE={sse}")
 
-        if sse < best_sse:
+        # Update best parameters based on SSE and, if applicable, purity
+        update_params = False
+        if is_classification_dataset:
+            purity, _ = calculate_purity(assignments, class_labels)
+            logging.info(f"k={k}: Purity={purity}")
+            # Update if purity is better, or if purity is equal and SSE is lower
+            if purity > best_purity or (purity == best_purity and sse < best_sse):
+                update_params = True
+        elif sse < best_sse:
+            update_params = True
+
+        # Update best parameters
+        if update_params:
             best_sse = sse
             best_k = k
+            if is_classification_dataset:
+                best_purity = purity
 
-    # Tuning threshold next, using the best k
-    for threshold in threshold_values:
-        logging.info(f"Evaluating k-means with k: {best_k} and threshold: {threshold}")
-        centroids, assignments = kmeans(data, best_k, threshold)  # Assume kmeans() can now accept threshold as an argument
-        sse = calculate_sse(data, centroids, assignments)
-        logging.info(f"SSE for threshold={threshold}: {sse}")
+    # Output best parameters for SSE
+    print(f"Best SSE parameters: k={best_k} with SSE: {best_sse}")
+    logging.info(f"Best SSE parameters: k={best_k} with SSE: {best_sse}")
 
-        if sse < best_sse:
-            best_sse = sse
-            best_threshold = threshold
+    # Output best parameters for purity if applicable
+    if is_classification_dataset:
+        print(f"Best Purity parameters: k={best_k} with Purity: {best_purity}")
+        logging.info(f"Best Purity parameters: k={best_k} with Purity: {best_purity}")
 
-    # Output the best parameters
-    print(f"Best parameters: k={best_k}, threshold={best_threshold} with SSE: {best_sse}")
-    logging.info(f"Best parameters: k={best_k}, threshold={best_threshold} with SSE: {best_sse}")
 
 if __name__ == "__main__":
     main()
