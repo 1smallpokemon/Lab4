@@ -68,23 +68,44 @@ def main():
         data =  preprocess_data(uncleaned_data)
         
         if argc > 2:
-            threshold = int(sys.argv[2])
+            threshold = float(sys.argv[2])
+        else:
+            threshold = None
         
     except Exception as e:
         print(f"Error: {e}")
         sys.exit(1)
         
     tree = hclusters(data)
+    output_json(tree)
+    if threshold is not None:
+        print("CLUSTERS:")
+        clusters = compute_clusters(threshold, tree)
+        print("SSE=", compute_sse(clusters))
+        return clusters
+    
+    
+def output_json(tree):
     tree_dict = tree.convert_to_dict()
     print(json.dumps(tree_dict, indent=4))
-    print("CLUSTERS:")
-    clusters = cut_at_threshold(tree, 0.1)
+    
+def compute_clusters(threshold, tree):
+    clusters = cut_at_threshold(tree, threshold)
     count = 1
     for cluster in clusters:
         print("Cluster", count)
         #print(json.dumps(cluster.convert_to_dict(), indent=4))
         evaluate_cluster(cluster)
         count += 1
+    return clusters
+
+def compute_sse(clusters):
+    sse = 0
+    for cluster in clusters:
+        distances = evaluate_cluster(cluster)
+        for dist in distances:
+            sse += (distances[dist])**2
+    return sse
 
 def evaluate_cluster(cluster):
     """
@@ -120,6 +141,10 @@ def evaluate_cluster(cluster):
     print("Min Dist. to Center:", min_dist)
     print("Avg Dist. to Center:", avg_dist)
     print(len(points), "Points")
+    for point in points:
+        cluster.print_data_point(point)
+
+    return distances
 
 
 def cut_at_threshold(tree, threshold):
