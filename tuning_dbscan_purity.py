@@ -1,6 +1,8 @@
 import sys
 import numpy as np
 import logging
+import math
+import os
 from preprocessing import load_data, preprocess_data
 from dbscan import dbscan
 from kmeans import calculate_purity
@@ -23,13 +25,18 @@ def adjust_ranges(epsilon, min_points, performance_metric, epsilon_range, min_po
     return epsilon_range, min_points_range
 
 def main():
-    logging.basicConfig(filename='tuning_dbscan.log', level=logging.INFO, filemode='w', format='%(asctime)s - %(levelname)s - %(message)s')
 
     if len(sys.argv) < 4:
-        logging.error("Usage: python tuning_dbscan.py <Filename> <Threshold> <Iterations>")
+        print("Usage: python tuning_dbscan.py <Filename> <Threshold> <Iterations>")
         sys.exit(1)
 
     file_path = sys.argv[1]
+    
+    base_filename = os.path.splitext(os.path.basename(file_path))[0]
+    log_filename = f"{base_filename}_dbscan_tuning_purity.log"
+
+    # Initialize logging
+    logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     uncleaned_data = load_data(file_path)
     data, class_labels = preprocess_data(uncleaned_data)
 
@@ -40,7 +47,7 @@ def main():
     best_noise_count = None  
 
     # Define the initial range for epsilon and min_points
-    epsilon_range = (0.1, 10)
+    epsilon_range = (0.01, math.sqrt(3)/2)
     min_points_range = (2, 50)
 
     threshold = float(sys.argv[2])
