@@ -28,7 +28,7 @@ def preprocess_data(data):
         data[col] = pd.to_numeric(data[col], errors='coerce')
 
     # Replace '?' with NaN and drop rows with NaN values
-    data = data.replace('?', np.nan).dropna()
+    data = data.dropna(axis=1, how='all')
 
     # Normalize the data
     data = normalize(data)
