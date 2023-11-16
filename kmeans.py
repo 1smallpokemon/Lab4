@@ -48,14 +48,14 @@ def initial_centroids(data , k):
     return [data.sample(n=1, axis = 0).T for i in range(k)]
     ## TODO Implement KMeans++ after :D
 
-def kmeans(data, k, threshold = 0.001):
+def kmeans(data, k, threshold = 10):
     centroids = initial_centroids_kmeans_pp(data, k)
     old_centroids = pd.DataFrame(np.zeros_like(centroids.values))
     assignments = np.zeros(data.shape[0])
     old_assignments = np.ones(data.shape[0]) * -1
-    max_iterations = 100
+    max_iterations = 1000
     old_sse = None
-
+    old_centroids_change = 0
     for iteration in range(max_iterations):
         # Assignment step
         for i, row in data.iterrows():
@@ -74,9 +74,10 @@ def kmeans(data, k, threshold = 0.001):
 
         # Check for stopping condition based on centroids
         centroids_changed = sum(DistanceCalculator.euclidean_distance(old_centroids.iloc[i], centroids.iloc[i]) for i in range(k))
-        if centroids_changed <= threshold:
+        if centroids_changed <= old_centroids_change:
             break
-
+        old_centroids_change = centroids_changed
+                 
         # Calculate SSE and check for stopping condition
         sse = calculate_sse(data, centroids, assignments)
         if old_sse is not None and abs(old_sse - sse) <= threshold:
