@@ -1,293 +1,294 @@
-2023-11-17 12:17:26,902 INFO Noise: 0 points
-2023-11-17 12:17:50,991 INFO Iteration 1/20: Testing epsilon=0.03893412491574829, min_points=2
-2023-11-17 12:17:52,150 INFO Noise count: 48
-2023-11-17 12:17:52,165 INFO Epsilon=0.03893412491574829, Min Points=2, SSE=0.012810401576882452
-2023-11-17 12:17:52,165 INFO New best performance: SSE=0.012810401576882452, Epsilon=0.03893412491574829, Min Points=2, Noise count: 48
-2023-11-17 12:17:52,165 INFO Iteration 2/20: Testing epsilon=0.10239265181846748, min_points=2
-2023-11-17 12:17:53,349 INFO Noise count: 13
-2023-11-17 12:17:53,369 INFO Epsilon=0.10239265181846748, Min Points=2, SSE=0.8570222162709572
-2023-11-17 12:17:53,369 INFO Iteration 3/20: Testing epsilon=0.13730585637915488, min_points=2
-2023-11-17 12:17:54,603 INFO Noise count: 4
-2023-11-17 12:17:54,609 INFO Epsilon=0.13730585637915488, Min Points=2, SSE=6.461123891860401
-2023-11-17 12:17:54,610 INFO Iteration 4/20: Testing epsilon=0.1365486965978017, min_points=2
-2023-11-17 12:17:55,749 INFO Noise count: 4
-2023-11-17 12:17:55,754 INFO Epsilon=0.1365486965978017, Min Points=2, SSE=6.461123891860401
-2023-11-17 12:17:55,754 INFO Iteration 5/20: Testing epsilon=0.12442370757530918, min_points=2
-2023-11-17 12:17:56,914 INFO Noise count: 6
-2023-11-17 12:17:56,920 INFO Epsilon=0.12442370757530918, Min Points=2, SSE=4.456624562000331
-2023-11-17 12:17:56,920 INFO Iteration 6/20: Testing epsilon=0.10572872154956663, min_points=2
-2023-11-17 12:17:58,063 INFO Noise count: 11
-2023-11-17 12:17:58,078 INFO Epsilon=0.10572872154956663, Min Points=2, SSE=0.9020850611803107
-2023-11-17 12:17:58,078 INFO Iteration 7/20: Testing epsilon=0.1345745564123284, min_points=2
-2023-11-17 12:17:59,243 INFO Noise count: 4
-2023-11-17 12:17:59,249 INFO Epsilon=0.1345745564123284, Min Points=2, SSE=6.306972487708997
-2023-11-17 12:17:59,249 INFO Iteration 8/20: Testing epsilon=0.10108318273536702, min_points=2
-2023-11-17 12:18:00,379 INFO Noise count: 13
-2023-11-17 12:18:00,393 INFO Epsilon=0.10108318273536702, Min Points=2, SSE=0.8570222162709572
-2023-11-17 12:18:00,394 INFO Iteration 9/20: Testing epsilon=0.10766593326207428, min_points=2
-2023-11-17 12:18:01,525 INFO Noise count: 10
-2023-11-17 12:18:01,537 INFO Epsilon=0.10766593326207428, Min Points=2, SSE=2.2764407665502526
-2023-11-17 12:18:01,537 INFO Iteration 10/20: Testing epsilon=0.11875778854202006, min_points=2
-2023-11-17 12:18:02,664 INFO Noise count: 7
-2023-11-17 12:18:02,675 INFO Epsilon=0.11875778854202006, Min Points=2, SSE=2.7221371703263717
-2023-11-17 12:18:02,675 INFO Iteration 11/20: Testing epsilon=0.11576020133714399, min_points=2
-2023-11-17 12:18:03,817 INFO Noise count: 7
-2023-11-17 12:18:03,827 INFO Epsilon=0.11576020133714399, Min Points=2, SSE=2.7221371703263717
-2023-11-17 12:18:03,828 INFO Iteration 12/20: Testing epsilon=0.11962663802718118, min_points=2
-2023-11-17 12:18:04,955 INFO Noise count: 6
-2023-11-17 12:18:04,963 INFO Epsilon=0.11962663802718118, Min Points=2, SSE=2.9634497578001513
-2023-11-17 12:18:04,964 INFO Iteration 13/20: Testing epsilon=0.112319493179138, min_points=2
-2023-11-17 12:18:06,097 INFO Noise count: 9
-2023-11-17 12:18:06,109 INFO Epsilon=0.112319493179138, Min Points=2, SSE=2.343447904845539
-2023-11-17 12:18:06,109 INFO Iteration 14/20: Testing epsilon=0.10142948742546744, min_points=2
-2023-11-17 12:18:07,240 INFO Noise count: 13
-2023-11-17 12:18:07,254 INFO Epsilon=0.10142948742546744, Min Points=2, SSE=0.8570222162709572
-2023-11-17 12:18:07,254 INFO Iteration 15/20: Testing epsilon=0.11456075808980708, min_points=2
-2023-11-17 12:18:08,397 INFO Noise count: 7
-2023-11-17 12:18:08,407 INFO Epsilon=0.11456075808980708, Min Points=2, SSE=2.7221371703263717
-2023-11-17 12:18:08,408 INFO Iteration 16/20: Testing epsilon=0.12399994886055851, min_points=2
-2023-11-17 12:18:09,527 INFO Noise count: 6
-2023-11-17 12:18:09,533 INFO Epsilon=0.12399994886055851, Min Points=2, SSE=4.456624562000331
-2023-11-17 12:18:09,533 INFO Iteration 17/20: Testing epsilon=0.1032617592059061, min_points=2
-2023-11-17 12:18:10,676 INFO Noise count: 13
-2023-11-17 12:18:10,691 INFO Epsilon=0.1032617592059061, Min Points=2, SSE=0.8570222162709572
-2023-11-17 12:18:10,691 INFO Iteration 18/20: Testing epsilon=0.1327273421857179, min_points=2
-2023-11-17 12:18:11,840 INFO Noise count: 4
-2023-11-17 12:18:11,846 INFO Epsilon=0.1327273421857179, Min Points=2, SSE=6.306972487708997
-2023-11-17 12:18:11,846 INFO Iteration 19/20: Testing epsilon=0.1248580863088676, min_points=2
-2023-11-17 12:18:12,968 INFO Noise count: 6
-2023-11-17 12:18:12,974 INFO Epsilon=0.1248580863088676, Min Points=2, SSE=4.456624562000331
-2023-11-17 12:18:12,974 INFO Iteration 20/20: Testing epsilon=0.13499824885428002, min_points=2
-2023-11-17 12:18:14,117 INFO Noise count: 4
-2023-11-17 12:18:14,124 INFO Epsilon=0.13499824885428002, Min Points=2, SSE=6.306972487708997
-2023-11-17 12:18:14,124 INFO Best DBSCAN Parameters:
-2023-11-17 12:18:14,124 INFO Epsilon=0.03893412491574829, Min Points=2
-2023-11-17 12:18:14,124 INFO Best Performance: 0.012810401576882452
-2023-11-17 12:18:15,282 INFO Final Clusters and Noise Points:
-2023-11-17 12:18:15,282 INFO Cluster 1: 4 points
-2023-11-17 12:18:15,283 INFO Data Point: 0    0.425532
+2023-11-17 12:35:47,314 INFO Iteration 1/20: Testing epsilon=0.21665168240557647, min_points=4
+2023-11-17 12:35:49,295 INFO Noise count: 1
+2023-11-17 12:35:49,300 INFO Epsilon=0.21665168240557647, Min Points=4, SSE=12.134746751854086
+2023-11-17 12:35:49,300 INFO New best performance: SSE=12.134746751854086, Epsilon=0.21665168240557647, Min Points=4, Noise count: 1
+2023-11-17 12:35:49,300 INFO Iteration 2/20: Testing epsilon=0.3483501785044044, min_points=4
+2023-11-17 12:35:50,889 INFO Noise count: 0
+2023-11-17 12:35:50,892 INFO Epsilon=0.3483501785044044, Min Points=4, SSE=12.36013887187843
+2023-11-17 12:35:50,892 INFO Iteration 3/20: Testing epsilon=0.17477078963921963, min_points=5
+2023-11-17 12:35:52,367 INFO Noise count: 3
+2023-11-17 12:35:52,376 INFO Epsilon=0.17477078963921963, Min Points=5, SSE=3.545174198778771
+2023-11-17 12:35:52,376 INFO New best performance: SSE=3.545174198778771, Epsilon=0.17477078963921963, Min Points=5, Noise count: 3
+2023-11-17 12:35:52,376 INFO Iteration 4/20: Testing epsilon=0.13748515681660342, min_points=4
+2023-11-17 12:35:53,880 INFO Noise count: 7
+2023-11-17 12:35:53,888 INFO Epsilon=0.13748515681660342, Min Points=4, SSE=4.213686942113266
+2023-11-17 12:35:53,888 INFO Iteration 5/20: Testing epsilon=0.27129138794182617, min_points=3
+2023-11-17 12:35:55,743 INFO Noise count: 0
+2023-11-17 12:35:55,749 INFO Epsilon=0.27129138794182617, Min Points=3, SSE=12.36013887187843
+2023-11-17 12:35:55,750 INFO Iteration 6/20: Testing epsilon=0.3150171673543569, min_points=5
+2023-11-17 12:35:57,239 INFO Noise count: 0
+2023-11-17 12:35:57,243 INFO Epsilon=0.3150171673543569, Min Points=5, SSE=12.36013887187843
+2023-11-17 12:35:57,243 INFO Iteration 7/20: Testing epsilon=0.11937769456087768, min_points=4
+2023-11-17 12:35:58,688 INFO Noise count: 14
+2023-11-17 12:35:58,702 INFO Epsilon=0.11937769456087768, Min Points=4, SSE=1.0694505235075238
+2023-11-17 12:35:58,703 INFO New best performance: SSE=1.0694505235075238, Epsilon=0.11937769456087768, Min Points=4, Noise count: 14
+2023-11-17 12:35:58,703 INFO Iteration 8/20: Testing epsilon=0.2931765934907495, min_points=5
+2023-11-17 12:36:00,137 INFO Noise count: 0
+2023-11-17 12:36:00,139 INFO Epsilon=0.2931765934907495, Min Points=5, SSE=12.36013887187843
+2023-11-17 12:36:00,139 INFO Iteration 9/20: Testing epsilon=0.10443130958646248, min_points=5
+2023-11-17 12:36:01,636 INFO Noise count: 24
+2023-11-17 12:36:01,653 INFO Epsilon=0.10443130958646248, Min Points=5, SSE=0.21564106445185977
+2023-11-17 12:36:01,653 INFO New best performance: SSE=0.21564106445185977, Epsilon=0.10443130958646248, Min Points=5, Noise count: 24
+2023-11-17 12:36:01,653 INFO Iteration 10/20: Testing epsilon=0.2577945467512053, min_points=3
+2023-11-17 12:36:03,146 INFO Noise count: 0
+2023-11-17 12:36:03,150 INFO Epsilon=0.2577945467512053, Min Points=3, SSE=12.36013887187843
+2023-11-17 12:36:03,150 INFO Iteration 11/20: Testing epsilon=0.2706575655776793, min_points=5
+2023-11-17 12:36:04,515 INFO Noise count: 0
+2023-11-17 12:36:04,517 INFO Epsilon=0.2706575655776793, Min Points=5, SSE=12.36013887187843
+2023-11-17 12:36:04,518 INFO Iteration 12/20: Testing epsilon=0.34835351929749675, min_points=2
+2023-11-17 12:36:05,902 INFO Noise count: 0
+2023-11-17 12:36:05,904 INFO Epsilon=0.34835351929749675, Min Points=2, SSE=12.36013887187843
+2023-11-17 12:36:05,904 INFO Iteration 13/20: Testing epsilon=0.20470184657739, min_points=5
+2023-11-17 12:36:07,297 INFO Noise count: 1
+2023-11-17 12:36:07,300 INFO Epsilon=0.20470184657739, Min Points=5, SSE=12.134746751854086
+2023-11-17 12:36:07,300 INFO Iteration 14/20: Testing epsilon=0.2423458532002552, min_points=5
+2023-11-17 12:36:08,688 INFO Noise count: 1
+2023-11-17 12:36:08,691 INFO Epsilon=0.2423458532002552, Min Points=5, SSE=12.134746751854086
+2023-11-17 12:36:08,691 INFO Iteration 15/20: Testing epsilon=0.1824625461163096, min_points=4
+2023-11-17 12:36:10,149 INFO Noise count: 1
+2023-11-17 12:36:10,154 INFO Epsilon=0.1824625461163096, Min Points=4, SSE=8.2621476262207
+2023-11-17 12:36:10,154 INFO Iteration 16/20: Testing epsilon=0.16162532280854408, min_points=2
+2023-11-17 12:36:11,631 INFO Noise count: 1
+2023-11-17 12:36:11,633 INFO Epsilon=0.16162532280854408, Min Points=2, SSE=12.134746751854086
+2023-11-17 12:36:11,634 INFO Iteration 17/20: Testing epsilon=0.24208305525777762, min_points=5
+2023-11-17 12:36:13,188 INFO Noise count: 1
+2023-11-17 12:36:13,190 INFO Epsilon=0.24208305525777762, Min Points=5, SSE=12.134746751854086
+2023-11-17 12:36:13,190 INFO Iteration 18/20: Testing epsilon=0.30487545527610316, min_points=2
+2023-11-17 12:36:14,571 INFO Noise count: 0
+2023-11-17 12:36:14,575 INFO Epsilon=0.30487545527610316, Min Points=2, SSE=12.36013887187843
+2023-11-17 12:36:14,575 INFO Iteration 19/20: Testing epsilon=0.30036499180767184, min_points=4
+2023-11-17 12:36:15,967 INFO Noise count: 0
+2023-11-17 12:36:15,970 INFO Epsilon=0.30036499180767184, Min Points=4, SSE=12.36013887187843
+2023-11-17 12:36:15,970 INFO Iteration 20/20: Testing epsilon=0.3516355891598144, min_points=4
+2023-11-17 12:36:17,314 INFO Noise count: 0
+2023-11-17 12:36:17,317 INFO Epsilon=0.3516355891598144, Min Points=4, SSE=12.36013887187843
+2023-11-17 12:36:17,317 INFO Best DBSCAN Parameters:
+2023-11-17 12:36:17,317 INFO Epsilon=0.10443130958646248, Min Points=5
+2023-11-17 12:36:17,317 INFO Best Performance: 0.21564106445185977
+2023-11-17 12:36:18,528 INFO Final Clusters and Noise Points:
+2023-11-17 12:36:18,528 INFO Cluster 1: 6 points
+2023-11-17 12:36:18,529 INFO Data Point: 0    0.425532
 1    0.895833
 Name: 3, dtype: float64
-2023-11-17 12:18:15,284 INFO Data Point: 0    0.404255
+2023-11-17 12:36:18,530 INFO Data Point: 0    0.404255
 1    0.875000
 Name: 4, dtype: float64
-2023-11-17 12:18:15,284 INFO Data Point: 0    0.446809
+2023-11-17 12:36:18,530 INFO Data Point: 0    0.446809
 1    0.875000
 Name: 5, dtype: float64
-2023-11-17 12:18:15,285 INFO Data Point: 0    0.425532
-1    0.854167
-Name: 8, dtype: float64
-2023-11-17 12:18:15,285 INFO Cluster 2: 3 points
-2023-11-17 12:18:15,286 INFO Data Point: 0    0.787234
-1    0.854167
-Name: 9, dtype: float64
-2023-11-17 12:18:15,286 INFO Data Point: 0    0.808511
-1    0.833333
-Name: 11, dtype: float64
-2023-11-17 12:18:15,287 INFO Data Point: 0    0.787234
-1    0.812500
-Name: 13, dtype: float64
-2023-11-17 12:18:15,287 INFO Cluster 3: 2 points
-2023-11-17 12:18:15,288 INFO Data Point: 0    0.872340
-1    0.833333
-Name: 12, dtype: float64
-2023-11-17 12:18:15,288 INFO Data Point: 0    0.87234
-1    0.81250
-Name: 14, dtype: float64
-2023-11-17 12:18:15,289 INFO Cluster 4: 5 points
-2023-11-17 12:18:15,289 INFO Data Point: 0    0.06383
-1    0.75000
-Name: 17, dtype: float64
-2023-11-17 12:18:15,290 INFO Data Point: 0    0.106383
-1    0.750000
-Name: 18, dtype: float64
-2023-11-17 12:18:15,290 INFO Data Point: 0    0.085106
-1    0.729167
-Name: 21, dtype: float64
-2023-11-17 12:18:15,291 INFO Data Point: 0    0.063830
-1    0.708333
-Name: 24, dtype: float64
-2023-11-17 12:18:15,291 INFO Data Point: 0    0.106383
-1    0.708333
-Name: 25, dtype: float64
-2023-11-17 12:18:15,292 INFO Cluster 5: 2 points
-2023-11-17 12:18:15,292 INFO Data Point: 0    0.702128
-1    0.541667
-Name: 37, dtype: float64
-2023-11-17 12:18:15,293 INFO Data Point: 0    0.723404
-1    0.520833
-Name: 39, dtype: float64
-2023-11-17 12:18:15,293 INFO Cluster 6: 5 points
-2023-11-17 12:18:15,293 INFO Data Point: 0    0.12766
-1    0.12500
-Name: 60, dtype: float64
-2023-11-17 12:18:15,294 INFO Data Point: 0    0.170213
-1    0.125000
-Name: 61, dtype: float64
-2023-11-17 12:18:15,294 INFO Data Point: 0    0.148936
-1    0.104167
-Name: 63, dtype: float64
-2023-11-17 12:18:15,295 INFO Data Point: 0    0.127660
-1    0.083333
-Name: 67, dtype: float64
-2023-11-17 12:18:15,295 INFO Data Point: 0    0.170213
-1    0.083333
-Name: 68, dtype: float64
-2023-11-17 12:18:15,296 INFO Cluster 7: 4 points
-2023-11-17 12:18:15,296 INFO Data Point: 0    0.829787
-1    0.125000
-Name: 62, dtype: float64
-2023-11-17 12:18:15,297 INFO Data Point: 0    0.808511
-1    0.104167
-Name: 65, dtype: float64
-2023-11-17 12:18:15,297 INFO Data Point: 0    0.851064
-1    0.104167
-Name: 66, dtype: float64
-2023-11-17 12:18:15,298 INFO Data Point: 0    0.851064
-1    0.083333
-Name: 69, dtype: float64
-2023-11-17 12:18:15,298 INFO Noise: 48 points
-2023-11-17 12:18:15,299 INFO Noise Point: 0    0.446809
-1    1.000000
-Name: 0, dtype: float64
-2023-11-17 12:18:15,299 INFO Noise Point: 0    0.744681
-1    0.916667
-Name: 1, dtype: float64
-2023-11-17 12:18:15,300 INFO Noise Point: 0    0.340426
-1    0.895833
-Name: 2, dtype: float64
-2023-11-17 12:18:15,300 INFO Noise Point: 0    0.489362
+2023-11-17 12:36:18,531 INFO Data Point: 0    0.489362
 1    0.875000
 Name: 6, dtype: float64
-2023-11-17 12:18:15,301 INFO Noise Point: 0    0.829787
-1    0.875000
-Name: 7, dtype: float64
-2023-11-17 12:18:15,302 INFO Noise Point: 0    0.148936
-1    0.833333
-Name: 10, dtype: float64
-2023-11-17 12:18:15,302 INFO Noise Point: 0    0.361702
+2023-11-17 12:36:18,531 INFO Data Point: 0    0.425532
+1    0.854167
+Name: 8, dtype: float64
+2023-11-17 12:36:18,532 INFO Data Point: 0    0.361702
 1    0.791667
 Name: 15, dtype: float64
-2023-11-17 12:18:15,303 INFO Noise Point: 0    0.000000
-1    0.770833
-Name: 16, dtype: float64
-2023-11-17 12:18:15,304 INFO Noise Point: 0    0.489362
-1    0.750000
-Name: 19, dtype: float64
-2023-11-17 12:18:15,304 INFO Noise Point: 0    0.851064
+2023-11-17 12:36:18,532 INFO Cluster 2: 8 points
+2023-11-17 12:36:18,533 INFO Data Point: 0    0.829787
+1    0.875000
+Name: 7, dtype: float64
+2023-11-17 12:36:18,533 INFO Data Point: 0    0.787234
+1    0.854167
+Name: 9, dtype: float64
+2023-11-17 12:36:18,534 INFO Data Point: 0    0.808511
+1    0.833333
+Name: 11, dtype: float64
+2023-11-17 12:36:18,535 INFO Data Point: 0    0.872340
+1    0.833333
+Name: 12, dtype: float64
+2023-11-17 12:36:18,535 INFO Data Point: 0    0.787234
+1    0.812500
+Name: 13, dtype: float64
+2023-11-17 12:36:18,536 INFO Data Point: 0    0.87234
+1    0.81250
+Name: 14, dtype: float64
+2023-11-17 12:36:18,536 INFO Data Point: 0    0.851064
 1    0.750000
 Name: 20, dtype: float64
-2023-11-17 12:18:15,305 INFO Noise Point: 0    0.212766
-1    0.729167
-Name: 22, dtype: float64
-2023-11-17 12:18:15,306 INFO Noise Point: 0    0.744681
+2023-11-17 12:36:18,537 INFO Data Point: 0    0.744681
 1    0.729167
 Name: 23, dtype: float64
-2023-11-17 12:18:15,306 INFO Noise Point: 0    0.148936
+2023-11-17 12:36:18,537 INFO Cluster 3: 10 points
+2023-11-17 12:36:18,538 INFO Data Point: 0    0.06383
+1    0.75000
+Name: 17, dtype: float64
+2023-11-17 12:36:18,538 INFO Data Point: 0    0.106383
+1    0.750000
+Name: 18, dtype: float64
+2023-11-17 12:36:18,539 INFO Data Point: 0    0.085106
+1    0.729167
+Name: 21, dtype: float64
+2023-11-17 12:36:18,540 INFO Data Point: 0    0.212766
+1    0.729167
+Name: 22, dtype: float64
+2023-11-17 12:36:18,541 INFO Data Point: 0    0.063830
+1    0.708333
+Name: 24, dtype: float64
+2023-11-17 12:36:18,541 INFO Data Point: 0    0.106383
+1    0.708333
+Name: 25, dtype: float64
+2023-11-17 12:36:18,542 INFO Data Point: 0    0.148936
 1    0.687500
 Name: 26, dtype: float64
-2023-11-17 12:18:15,307 INFO Noise Point: 0    0.042553
+2023-11-17 12:36:18,542 INFO Data Point: 0    0.042553
 1    0.666667
 Name: 27, dtype: float64
-2023-11-17 12:18:15,307 INFO Noise Point: 0    0.489362
-1    0.666667
-Name: 28, dtype: float64
-2023-11-17 12:18:15,308 INFO Noise Point: 0    0.744681
-1    0.666667
-Name: 29, dtype: float64
-2023-11-17 12:18:15,309 INFO Noise Point: 0    0.127660
+2023-11-17 12:36:18,543 INFO Data Point: 0    0.127660
 1    0.645833
 Name: 30, dtype: float64
-2023-11-17 12:18:15,309 INFO Noise Point: 0    0.595745
-1    0.604167
-Name: 31, dtype: float64
-2023-11-17 12:18:15,310 INFO Noise Point: 0    0.680851
-1    0.604167
-Name: 32, dtype: float64
-2023-11-17 12:18:15,310 INFO Noise Point: 0    0.914894
-1    0.604167
-Name: 33, dtype: float64
-2023-11-17 12:18:15,311 INFO Noise Point: 0    0.170213
+2023-11-17 12:36:18,543 INFO Data Point: 0    0.170213
 1    0.562500
 Name: 34, dtype: float64
-2023-11-17 12:18:15,311 INFO Noise Point: 0    0.531915
-1    0.562500
-Name: 35, dtype: float64
-2023-11-17 12:18:15,312 INFO Noise Point: 0    0.659574
+2023-11-17 12:36:18,544 INFO Cluster 4: 9 points
+2023-11-17 12:36:18,545 INFO Data Point: 0    0.680851
+1    0.604167
+Name: 32, dtype: float64
+2023-11-17 12:36:18,545 INFO Data Point: 0    0.659574
 1    0.541667
 Name: 36, dtype: float64
-2023-11-17 12:18:15,313 INFO Noise Point: 0    0.319149
+2023-11-17 12:36:18,546 INFO Data Point: 0    0.702128
+1    0.541667
+Name: 37, dtype: float64
+2023-11-17 12:36:18,546 INFO Data Point: 0    0.723404
 1    0.520833
-Name: 38, dtype: float64
-2023-11-17 12:18:15,313 INFO Noise Point: 0    0.680851
+Name: 39, dtype: float64
+2023-11-17 12:36:18,547 INFO Data Point: 0    0.680851
 1    0.500000
 Name: 40, dtype: float64
-2023-11-17 12:18:15,314 INFO Noise Point: 0    0.765957
+2023-11-17 12:36:18,548 INFO Data Point: 0    0.765957
 1    0.500000
 Name: 41, dtype: float64
-2023-11-17 12:18:15,314 INFO Noise Point: 0    0.723404
+2023-11-17 12:36:18,548 INFO Data Point: 0    0.723404
 1    0.479167
 Name: 42, dtype: float64
-2023-11-17 12:18:15,315 INFO Noise Point: 0    0.127660
-1    0.458333
-Name: 43, dtype: float64
-2023-11-17 12:18:15,315 INFO Noise Point: 0    0.808511
+2023-11-17 12:36:18,549 INFO Data Point: 0    0.808511
 1    0.458333
 Name: 44, dtype: float64
-2023-11-17 12:18:15,316 INFO Noise Point: 0    0.595745
-1    0.416667
-Name: 45, dtype: float64
-2023-11-17 12:18:15,317 INFO Noise Point: 0    0.744681
+2023-11-17 12:36:18,550 INFO Data Point: 0    0.744681
 1    0.416667
 Name: 46, dtype: float64
-2023-11-17 12:18:15,318 INFO Noise Point: 0    0.425532
-1    0.375000
-Name: 47, dtype: float64
-2023-11-17 12:18:15,319 INFO Noise Point: 0    1.000
-1    0.375
-Name: 48, dtype: float64
-2023-11-17 12:18:15,320 INFO Noise Point: 0    0.170213
-1    0.354167
-Name: 49, dtype: float64
-2023-11-17 12:18:15,321 INFO Noise Point: 0    0.595745
-1    0.333333
-Name: 50, dtype: float64
-2023-11-17 12:18:15,322 INFO Noise Point: 0    0.765957
-1    0.312500
-Name: 51, dtype: float64
-2023-11-17 12:18:15,322 INFO Noise Point: 0    0.872340
-1    0.291667
-Name: 52, dtype: float64
-2023-11-17 12:18:15,323 INFO Noise Point: 0    0.085106
-1    0.270833
-Name: 53, dtype: float64
-2023-11-17 12:18:15,324 INFO Noise Point: 0    0.382979
-1    0.250000
-Name: 54, dtype: float64
-2023-11-17 12:18:15,324 INFO Noise Point: 0    0.765957
-1    0.208333
-Name: 55, dtype: float64
-2023-11-17 12:18:15,325 INFO Noise Point: 0    0.191489
+2023-11-17 12:36:18,550 INFO Cluster 5: 11 points
+2023-11-17 12:36:18,551 INFO Data Point: 0    0.191489
 1    0.187500
 Name: 56, dtype: float64
-2023-11-17 12:18:15,325 INFO Noise Point: 0    0.276596
+2023-11-17 12:36:18,551 INFO Data Point: 0    0.276596
 1    0.166667
 Name: 57, dtype: float64
-2023-11-17 12:18:15,326 INFO Noise Point: 0    0.042553
+2023-11-17 12:36:18,552 INFO Data Point: 0    0.042553
 1    0.145833
 Name: 58, dtype: float64
-2023-11-17 12:18:15,327 INFO Noise Point: 0    0.872340
-1    0.145833
-Name: 59, dtype: float64
-2023-11-17 12:18:15,327 INFO Noise Point: 0    0.212766
+2023-11-17 12:36:18,552 INFO Data Point: 0    0.12766
+1    0.12500
+Name: 60, dtype: float64
+2023-11-17 12:36:18,553 INFO Data Point: 0    0.170213
+1    0.125000
+Name: 61, dtype: float64
+2023-11-17 12:36:18,554 INFO Data Point: 0    0.148936
+1    0.104167
+Name: 63, dtype: float64
+2023-11-17 12:36:18,555 INFO Data Point: 0    0.212766
 1    0.104167
 Name: 64, dtype: float64
-2023-11-17 12:18:15,328 INFO Noise Point: 0    0.148936
+2023-11-17 12:36:18,556 INFO Data Point: 0    0.127660
+1    0.083333
+Name: 67, dtype: float64
+2023-11-17 12:36:18,556 INFO Data Point: 0    0.170213
+1    0.083333
+Name: 68, dtype: float64
+2023-11-17 12:36:18,557 INFO Data Point: 0    0.148936
 1    0.041667
 Name: 70, dtype: float64
-2023-11-17 12:18:15,328 INFO Noise Point: 0    0.510638
-1    0.041667
-Name: 71, dtype: float64
-2023-11-17 12:18:15,329 INFO Noise Point: 0    0.234043
+2023-11-17 12:36:18,558 INFO Data Point: 0    0.234043
 1    0.000000
 Name: 72, dtype: float64
+2023-11-17 12:36:18,558 INFO Cluster 6: 5 points
+2023-11-17 12:36:18,559 INFO Data Point: 0    0.872340
+1    0.145833
+Name: 59, dtype: float64
+2023-11-17 12:36:18,559 INFO Data Point: 0    0.829787
+1    0.125000
+Name: 62, dtype: float64
+2023-11-17 12:36:18,560 INFO Data Point: 0    0.808511
+1    0.104167
+Name: 65, dtype: float64
+2023-11-17 12:36:18,561 INFO Data Point: 0    0.851064
+1    0.104167
+Name: 66, dtype: float64
+2023-11-17 12:36:18,561 INFO Data Point: 0    0.851064
+1    0.083333
+Name: 69, dtype: float64
+2023-11-17 12:36:18,562 INFO Noise: 24 points
+2023-11-17 12:36:18,562 INFO Noise Point: 0    0.446809
+1    1.000000
+Name: 0, dtype: float64
+2023-11-17 12:36:18,563 INFO Noise Point: 0    0.744681
+1    0.916667
+Name: 1, dtype: float64
+2023-11-17 12:36:18,563 INFO Noise Point: 0    0.340426
+1    0.895833
+Name: 2, dtype: float64
+2023-11-17 12:36:18,564 INFO Noise Point: 0    0.148936
+1    0.833333
+Name: 10, dtype: float64
+2023-11-17 12:36:18,565 INFO Noise Point: 0    0.000000
+1    0.770833
+Name: 16, dtype: float64
+2023-11-17 12:36:18,565 INFO Noise Point: 0    0.489362
+1    0.750000
+Name: 19, dtype: float64
+2023-11-17 12:36:18,566 INFO Noise Point: 0    0.489362
+1    0.666667
+Name: 28, dtype: float64
+2023-11-17 12:36:18,567 INFO Noise Point: 0    0.744681
+1    0.666667
+Name: 29, dtype: float64
+2023-11-17 12:36:18,568 INFO Noise Point: 0    0.595745
+1    0.604167
+Name: 31, dtype: float64
+2023-11-17 12:36:18,569 INFO Noise Point: 0    0.914894
+1    0.604167
+Name: 33, dtype: float64
+2023-11-17 12:36:18,570 INFO Noise Point: 0    0.531915
+1    0.562500
+Name: 35, dtype: float64
+2023-11-17 12:36:18,571 INFO Noise Point: 0    0.319149
+1    0.520833
+Name: 38, dtype: float64
+2023-11-17 12:36:18,571 INFO Noise Point: 0    0.127660
+1    0.458333
+Name: 43, dtype: float64
+2023-11-17 12:36:18,572 INFO Noise Point: 0    0.595745
+1    0.416667
+Name: 45, dtype: float64
+2023-11-17 12:36:18,572 INFO Noise Point: 0    0.425532
+1    0.375000
+Name: 47, dtype: float64
+2023-11-17 12:36:18,573 INFO Noise Point: 0    1.000
+1    0.375
+Name: 48, dtype: float64
+2023-11-17 12:36:18,574 INFO Noise Point: 0    0.170213
+1    0.354167
+Name: 49, dtype: float64
+2023-11-17 12:36:18,575 INFO Noise Point: 0    0.595745
+1    0.333333
+Name: 50, dtype: float64
+2023-11-17 12:36:18,576 INFO Noise Point: 0    0.765957
+1    0.312500
+Name: 51, dtype: float64
+2023-11-17 12:36:18,576 INFO Noise Point: 0    0.872340
+1    0.291667
+Name: 52, dtype: float64
+2023-11-17 12:36:18,577 INFO Noise Point: 0    0.085106
+1    0.270833
+Name: 53, dtype: float64
+2023-11-17 12:36:18,578 INFO Noise Point: 0    0.382979
+1    0.250000
+Name: 54, dtype: float64
+2023-11-17 12:36:18,578 INFO Noise Point: 0    0.765957
+1    0.208333
+Name: 55, dtype: float64
+2023-11-17 12:36:18,579 INFO Noise Point: 0    0.510638
+1    0.041667
+Name: 71, dtype: float64
