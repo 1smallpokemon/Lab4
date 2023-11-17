@@ -49,8 +49,8 @@ def main():
     best_min_points = None
 
     # Define the initial range for epsilon and min_points
-    epsilon_range = (0.01, math.sqrt(3)/2)
-    min_points_range = (2, 20)
+    epsilon_range = (.001, math.sqrt(2)/4)
+    min_points_range = (2, 6)
 
     
     threshold = float(sys.argv[2])
