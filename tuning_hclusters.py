@@ -28,9 +28,9 @@ def main():
 
     # Parameter ranges for tuning
     threshold_values = list()
-    threshold_min = 0.1
-    threshold_max = 0.9
-    step = 0.1
+    threshold_min = 0.01
+    threshold_max = 0.09
+    step = 0.01
     i = threshold_min
     while i <= threshold_max:
         threshold_values.append(i)

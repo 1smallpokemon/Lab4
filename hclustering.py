@@ -91,7 +91,7 @@ def output_json(tree):
     
 def compute_clusters(threshold, tree):
     clusters = cut_at_threshold(tree, threshold)
-    count = 1
+    count = 0
     for cluster in clusters:
         print("Cluster", count)
         #print(json.dumps(cluster.convert_to_dict(), indent=4))
@@ -142,7 +142,7 @@ def evaluate_cluster(cluster):
     print("Avg Dist. to Center:", avg_dist)
     print(len(points), "Points")
     for point in points:
-        cluster.print_data_point(point)
+        print(cluster.print_data_point(point))
 
     return distances
 
