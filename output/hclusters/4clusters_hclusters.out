@@ -1,0 +1,910 @@
+{
+    "type": "root",
+    "height": 0.35437246666625666,
+    "nodes": [
+        {
+            "type": "node",
+            "height": 0.16356973682909948,
+            "nodes": [
+                {
+                    "type": "node",
+                    "height": 0.13215082133389933,
+                    "nodes": [
+                        {
+                            "type": "leaf",
+                            "height": 0.0,
+                            "data": "0.5128205128205128, 0.4444444444444444"
+                        },
+                        {
+                            "type": "leaf",
+                            "height": 0.0,
+                            "data": "0.41025641025641024, 0.3611111111111111"
+                        }
+                    ]
+                },
+                {
+                    "type": "node",
+                    "height": 0.13972463866898996,
+                    "nodes": [
+                        {
+                            "type": "node",
+                            "height": 0.0,
+                            "nodes": [
+                                {
+                                    "type": "leaf",
+                                    "height": 0.0,
+                                    "data": "0.5128205128205128, 0.19444444444444445"
+                                },
+                                {
+                                    "type": "leaf",
+                                    "height": 0.0,
+                                    "data": "0.5128205128205128, 0.19444444444444445"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "node",
+                            "height": 0.1388888888888889,
+                            "nodes": [
+                                {
+                                    "type": "node",
+                                    "height": 0.0948871936374979,
+                                    "nodes": [
+                                        {
+                                            "type": "node",
+                                            "height": 0.07560600860236812,
+                                            "nodes": [
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.6410256410256411, 0.1111111111111111"
+                                                },
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.5897435897435898, 0.05555555555555555"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "node",
+                                            "height": 0.0871889135175349,
+                                            "nodes": [
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.8205128205128205, 0.1111111111111111"
+                                                },
+                                                {
+                                                    "type": "node",
+                                                    "height": 0.0817848684145498,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "node",
+                                                            "height": 0.05128205128205132,
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.8717948717948718, 0.0"
+                                                                },
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.9230769230769231, 0.0"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "node",
+                                                            "height": 0.08178486841454968,
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.717948717948718, 0.05555555555555555"
+                                                                },
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.7948717948717948, 0.027777777777777776"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "node",
+                                    "height": 0.122374539002362,
+                                    "nodes": [
+                                        {
+                                            "type": "leaf",
+                                            "height": 0.0,
+                                            "data": "0.6666666666666666, 0.5"
+                                        },
+                                        {
+                                            "type": "node",
+                                            "height": 0.11664396635859982,
+                                            "nodes": [
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.6410256410256411, 0.25"
+                                                },
+                                                {
+                                                    "type": "node",
+                                                    "height": 0.08178486841454967,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "leaf",
+                                                            "height": 0.0,
+                                                            "data": "0.7435897435897436, 0.3055555555555556"
+                                                        },
+                                                        {
+                                                            "type": "node",
+                                                            "height": 0.07692307692307687,
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.717948717948718, 0.3888888888888889"
+                                                                },
+                                                                {
+                                                                    "type": "node",
+                                                                    "height": 0.06118726950118103,
+                                                                    "nodes": [
+                                                                        {
+                                                                            "type": "leaf",
+                                                                            "height": 0.0,
+                                                                            "data": "0.8205128205128205, 0.3333333333333333"
+                                                                        },
+                                                                        {
+                                                                            "type": "node",
+                                                                            "height": 0.05832198317929996,
+                                                                            "nodes": [
+                                                                                {
+                                                                                    "type": "leaf",
+                                                                                    "height": 0.0,
+                                                                                    "data": "0.8461538461538461, 0.4166666666666667"
+                                                                                },
+                                                                                {
+                                                                                    "type": "leaf",
+                                                                                    "height": 0.0,
+                                                                                    "data": "0.7948717948717948, 0.3888888888888889"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "node",
+            "height": 0.334488738299786,
+            "nodes": [
+                {
+                    "type": "node",
+                    "height": 0.08333333333333326,
+                    "nodes": [
+                        {
+                            "type": "leaf",
+                            "height": 0.0,
+                            "data": "0.8205128205128205, 0.8333333333333334"
+                        },
+                        {
+                            "type": "node",
+                            "height": 0.08178486841454968,
+                            "nodes": [
+                                {
+                                    "type": "leaf",
+                                    "height": 0.0,
+                                    "data": "1.0, 0.8611111111111112"
+                                },
+                                {
+                                    "type": "node",
+                                    "height": 0.06118726950118103,
+                                    "nodes": [
+                                        {
+                                            "type": "node",
+                                            "height": 0.06118726950118103,
+                                            "nodes": [
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.8205128205128205, 0.9166666666666666"
+                                                },
+                                                {
+                                                    "type": "node",
+                                                    "height": 0.05832198317929996,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "leaf",
+                                                            "height": 0.0,
+                                                            "data": "0.8974358974358975, 1.0"
+                                                        },
+                                                        {
+                                                            "type": "leaf",
+                                                            "height": 0.0,
+                                                            "data": "0.8461538461538461, 0.9722222222222222"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "node",
+                                            "height": 0.06118726950118103,
+                                            "nodes": [
+                                                {
+                                                    "type": "node",
+                                                    "height": 0.05128205128205121,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "leaf",
+                                                            "height": 0.0,
+                                                            "data": "0.9230769230769231, 0.9444444444444444"
+                                                        },
+                                                        {
+                                                            "type": "leaf",
+                                                            "height": 0.0,
+                                                            "data": "0.9743589743589743, 0.9444444444444444"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "node",
+                                                    "height": 0.061187269501180926,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "leaf",
+                                                            "height": 0.0,
+                                                            "data": "0.8974358974358975, 0.8888888888888888"
+                                                        },
+                                                        {
+                                                            "type": "leaf",
+                                                            "height": 0.0,
+                                                            "data": "0.9230769230769231, 0.8333333333333334"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "node",
+                    "height": 0.16356973682909945,
+                    "nodes": [
+                        {
+                            "type": "node",
+                            "height": 0.08718891351753492,
+                            "nodes": [
+                                {
+                                    "type": "node",
+                                    "height": 0.07692307692307693,
+                                    "nodes": [
+                                        {
+                                            "type": "leaf",
+                                            "height": 0.0,
+                                            "data": "0.07692307692307693, 0.6944444444444444"
+                                        },
+                                        {
+                                            "type": "node",
+                                            "height": 0.03780300430118405,
+                                            "nodes": [
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.1794871794871795, 0.7222222222222222"
+                                                },
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.15384615384615385, 0.6944444444444444"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "node",
+                                    "height": 0.07692307692307693,
+                                    "nodes": [
+                                        {
+                                            "type": "node",
+                                            "height": 0.061187269501181016,
+                                            "nodes": [
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.1794871794871795, 0.8611111111111112"
+                                                },
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.15384615384615385, 0.8055555555555556"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "node",
+                                            "height": 0.06118726950118102,
+                                            "nodes": [
+                                                {
+                                                    "type": "leaf",
+                                                    "height": 0.0,
+                                                    "data": "0.0, 0.7777777777777778"
+                                                },
+                                                {
+                                                    "type": "node",
+                                                    "height": 0.06118726950118092,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "node",
+                                                            "height": 0.05832198317929992,
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.10256410256410256, 0.9166666666666666"
+                                                                },
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.05128205128205128, 0.8888888888888888"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "node",
+                                                            "height": 0.05832198317929993,
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.02564102564102564, 0.8333333333333334"
+                                                                },
+                                                                {
+                                                                    "type": "leaf",
+                                                                    "height": 0.0,
+                                                                    "data": "0.07692307692307693, 0.8055555555555556"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "node",
+                            "height": 0.15384615384615385,
+                            "nodes": [
+                                {
+                                    "type": "leaf",
+                                    "height": 0.0,
+                                    "data": "0.3333333333333333, 0.8055555555555556"
+                                },
+                                {
+                                    "type": "leaf",
+                                    "height": 0.0,
+                                    "data": "0.48717948717948717, 0.8055555555555556"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+CLUSTERS:
+Cluster 0
+Center: 0.5128205128205128, 0.4444444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.5128205128205128, 0.4444444444444444
+Cluster 1
+Center: 0.41025641025641024, 0.3611111111111111
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.41025641025641024, 0.3611111111111111
+Cluster 2
+Center: 0.5128205128205128, 0.19444444444444445
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+2 Points
+0.5128205128205128, 0.19444444444444445
+0.5128205128205128, 0.19444444444444445
+Cluster 3
+Center: 0.8205128205128205, 0.8333333333333334
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.8333333333333334
+Cluster 4
+Center: 1.0, 0.8611111111111112
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+1.0, 0.8611111111111112
+Cluster 5
+Center: 0.3333333333333333, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.3333333333333333, 0.8055555555555556
+Cluster 6
+Center: 0.48717948717948717, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.48717948717948717, 0.8055555555555556
+Cluster 7
+Center: 0.6666666666666666, 0.5
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.6666666666666666, 0.5
+Cluster 8
+Center: 0.07692307692307693, 0.6944444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.07692307692307693, 0.6944444444444444
+Cluster 9
+Center: 0.16666666666666669, 0.7083333333333333
+Max Dist. to Center: 0.018901502150592057
+Min Dist. to Center: 0.018901502150591994
+Avg Dist. to Center: 0.018901502150592026
+2 Points
+0.1794871794871795, 0.7222222222222222
+0.15384615384615385, 0.6944444444444444
+Cluster 10
+Center: 0.6410256410256411, 0.1111111111111111
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.6410256410256411, 0.1111111111111111
+Cluster 11
+Center: 0.5897435897435898, 0.05555555555555555
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.5897435897435898, 0.05555555555555555
+Cluster 12
+Center: 0.8205128205128205, 0.1111111111111111
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.1111111111111111
+Cluster 13
+Center: 0.6410256410256411, 0.25
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.6410256410256411, 0.25
+Cluster 14
+Center: 0.8205128205128205, 0.9166666666666666
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.9166666666666666
+Cluster 15
+Center: 0.1794871794871795, 0.8611111111111112
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.1794871794871795, 0.8611111111111112
+Cluster 16
+Center: 0.15384615384615385, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.15384615384615385, 0.8055555555555556
+Cluster 17
+Center: 0.0, 0.7777777777777778
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.0, 0.7777777777777778
+Cluster 18
+Center: 0.7435897435897436, 0.3055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.7435897435897436, 0.3055555555555556
+Cluster 19
+Center: 0.8974358974358975, 1.0
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8974358974358975, 1.0
+Cluster 20
+Center: 0.8461538461538461, 0.9722222222222222
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8461538461538461, 0.9722222222222222
+Cluster 21
+Center: 0.9230769230769231, 0.9444444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9230769230769231, 0.9444444444444444
+Cluster 22
+Center: 0.9743589743589743, 0.9444444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9743589743589743, 0.9444444444444444
+Cluster 23
+Center: 0.8974358974358975, 0.8888888888888888
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8974358974358975, 0.8888888888888888
+Cluster 24
+Center: 0.9230769230769231, 0.8333333333333334
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9230769230769231, 0.8333333333333334
+Cluster 25
+Center: 0.8717948717948718, 0.0
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8717948717948718, 0.0
+Cluster 26
+Center: 0.9230769230769231, 0.0
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9230769230769231, 0.0
+Cluster 27
+Center: 0.717948717948718, 0.05555555555555555
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.717948717948718, 0.05555555555555555
+Cluster 28
+Center: 0.7948717948717948, 0.027777777777777776
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.7948717948717948, 0.027777777777777776
+Cluster 29
+Center: 0.717948717948718, 0.3888888888888889
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.717948717948718, 0.3888888888888889
+Cluster 30
+Center: 0.10256410256410256, 0.9166666666666666
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.10256410256410256, 0.9166666666666666
+Cluster 31
+Center: 0.05128205128205128, 0.8888888888888888
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.05128205128205128, 0.8888888888888888
+Cluster 32
+Center: 0.02564102564102564, 0.8333333333333334
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.02564102564102564, 0.8333333333333334
+Cluster 33
+Center: 0.07692307692307693, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.07692307692307693, 0.8055555555555556
+Cluster 34
+Center: 0.8205128205128205, 0.3333333333333333
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.3333333333333333
+Cluster 35
+Center: 0.8461538461538461, 0.4166666666666667
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8461538461538461, 0.4166666666666667
+Cluster 36
+Center: 0.7948717948717948, 0.3888888888888889
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.7948717948717948, 0.3888888888888889
+Center: 0.5128205128205128, 0.4444444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.5128205128205128, 0.4444444444444444
+Center: 0.41025641025641024, 0.3611111111111111
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.41025641025641024, 0.3611111111111111
+Center: 0.5128205128205128, 0.19444444444444445
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+2 Points
+0.5128205128205128, 0.19444444444444445
+0.5128205128205128, 0.19444444444444445
+Center: 0.8205128205128205, 0.8333333333333334
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.8333333333333334
+Center: 1.0, 0.8611111111111112
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+1.0, 0.8611111111111112
+Center: 0.3333333333333333, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.3333333333333333, 0.8055555555555556
+Center: 0.48717948717948717, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.48717948717948717, 0.8055555555555556
+Center: 0.6666666666666666, 0.5
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.6666666666666666, 0.5
+Center: 0.07692307692307693, 0.6944444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.07692307692307693, 0.6944444444444444
+Center: 0.16666666666666669, 0.7083333333333333
+Max Dist. to Center: 0.018901502150592057
+Min Dist. to Center: 0.018901502150591994
+Avg Dist. to Center: 0.018901502150592026
+2 Points
+0.1794871794871795, 0.7222222222222222
+0.15384615384615385, 0.6944444444444444
+Center: 0.6410256410256411, 0.1111111111111111
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.6410256410256411, 0.1111111111111111
+Center: 0.5897435897435898, 0.05555555555555555
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.5897435897435898, 0.05555555555555555
+Center: 0.8205128205128205, 0.1111111111111111
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.1111111111111111
+Center: 0.6410256410256411, 0.25
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.6410256410256411, 0.25
+Center: 0.8205128205128205, 0.9166666666666666
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.9166666666666666
+Center: 0.1794871794871795, 0.8611111111111112
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.1794871794871795, 0.8611111111111112
+Center: 0.15384615384615385, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.15384615384615385, 0.8055555555555556
+Center: 0.0, 0.7777777777777778
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.0, 0.7777777777777778
+Center: 0.7435897435897436, 0.3055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.7435897435897436, 0.3055555555555556
+Center: 0.8974358974358975, 1.0
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8974358974358975, 1.0
+Center: 0.8461538461538461, 0.9722222222222222
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8461538461538461, 0.9722222222222222
+Center: 0.9230769230769231, 0.9444444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9230769230769231, 0.9444444444444444
+Center: 0.9743589743589743, 0.9444444444444444
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9743589743589743, 0.9444444444444444
+Center: 0.8974358974358975, 0.8888888888888888
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8974358974358975, 0.8888888888888888
+Center: 0.9230769230769231, 0.8333333333333334
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9230769230769231, 0.8333333333333334
+Center: 0.8717948717948718, 0.0
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8717948717948718, 0.0
+Center: 0.9230769230769231, 0.0
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.9230769230769231, 0.0
+Center: 0.717948717948718, 0.05555555555555555
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.717948717948718, 0.05555555555555555
+Center: 0.7948717948717948, 0.027777777777777776
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.7948717948717948, 0.027777777777777776
+Center: 0.717948717948718, 0.3888888888888889
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.717948717948718, 0.3888888888888889
+Center: 0.10256410256410256, 0.9166666666666666
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.10256410256410256, 0.9166666666666666
+Center: 0.05128205128205128, 0.8888888888888888
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.05128205128205128, 0.8888888888888888
+Center: 0.02564102564102564, 0.8333333333333334
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.02564102564102564, 0.8333333333333334
+Center: 0.07692307692307693, 0.8055555555555556
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.07692307692307693, 0.8055555555555556
+Center: 0.8205128205128205, 0.3333333333333333
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8205128205128205, 0.3333333333333333
+Center: 0.8461538461538461, 0.4166666666666667
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.8461538461538461, 0.4166666666666667
+Center: 0.7948717948717948, 0.3888888888888889
+Max Dist. to Center: 0
+Min Dist. to Center: 0.0
+Avg Dist. to Center: 0.0
+1 Points
+0.7948717948717948, 0.3888888888888889
+SSE= 0.0007145335670976699
