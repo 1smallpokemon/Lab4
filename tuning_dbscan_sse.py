@@ -50,7 +50,7 @@ def main():
 
     # Define the initial range for epsilon and min_points
     epsilon_range = (0.01, math.sqrt(3)/2)
-    min_points_range = (2, 40)
+    min_points_range = (2, 20)
 
     
     threshold = float(sys.argv[2])

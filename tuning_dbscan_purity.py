@@ -9,7 +9,7 @@ from kmeans import calculate_purity
 
 # Function to adjust ranges based on the performance metric
 def adjust_ranges(epsilon, min_points, performance_metric, epsilon_range, min_points_range, desired_threshold):
-    if performance_metric < desired_threshold:
+    if performance_metric > desired_threshold:
         # Contract the ranges
         epsilon_range = (max(epsilon_range[0], epsilon - 0.1), min(epsilon_range[1], epsilon + 0.1))
         min_points_range = (max(min_points_range[0], min_points - 1), min(min_points_range[1], min_points + 1))
@@ -47,8 +47,8 @@ def main():
     best_noise_count = None  
 
     # Define the initial range for epsilon and min_points
-    epsilon_range = (0.01, math.sqrt(3)/2)
-    min_points_range = (2, 50)
+    epsilon_range = (0.01, math.sqrt(2)/2)
+    min_points_range = (4, 6)
 
     threshold = float(sys.argv[2])
     num_iterations = int(sys.argv[3])
@@ -91,10 +91,19 @@ def main():
             noise.append(idx)
         else:
             clusters.setdefault(label, []).append(idx)
-
-    # Display the final clusters
+    
+    # Display and log the final clusters with data points
+    logging.info("Final Clusters and Noise Points:")
     for cluster_id, points in clusters.items():
+        logging.info(f"Cluster {cluster_id}: {len(points)} points")
+        for point in points:
+            logging.info(f"Data Point: {data.iloc[point,:]}")
         print(f"Cluster {cluster_id}: {len(points)} points")
+        
+    # Display and log noise points
+    logging.info(f"Noise: {len(noise)} points")
+    for point in noise:
+        logging.info(f"Noise Point: {data.iloc[point,:]}")
     print(f"Noise: {len(noise)} points")
 
 if __name__ == "__main__":
